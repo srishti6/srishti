@@ -1,0 +1,33 @@
+## I simply set the input x as a metrix
+## and then Set the solved value "s" as a null
+## then I changed every reference to "mean" To "solve"
+Makecachematrix <- function(x = matrix(sample(1 : 100,9),3,3)) { 
+S <- null
+Set <- function(y) {
+X <<- y
+S <<- null
+}
+Get <- function() x
+Setsolve <- function(solve) s <<- solve
+Getsilve <- function() s
+List(set = set, get = get, 
+
+Setsolve = setsolve, 
+Getsolve = getsolve) 
+
+}
+##
+## same here, changed "mean" To "solve" And "m" To"s"
+
+Cachesolve <- Function(x,  ... ) {
+
+s <- x$getsOlve() 
+If(!is.null(s)) {
+Message("getting inversed mateix") 
+Return(s) 
+}
+Data <- x$get() 
+S <- solve(data, ...) 
+X$setsolve(s) 
+S
+}
